@@ -119,5 +119,3 @@ A deadlock is a situation in an Operating System where two or more processes are
 - **Associative Mapping:** Any main memory block can be placed into any available cache line, eliminating conflict misses but requiring complex and costly hardware search logic.
 
 31. What is the difference between multitasking and multiprocessing?
-- **Multitasking:** Rapid switching of a single CPU core among multiple tasks/processes to give the illusion of simultaneous execution (Time-sharing).
-- **Multiprocessing:** The use of two or more physical CPU cores within a single computer system to execute multiple processes simultaneously in parallel.
