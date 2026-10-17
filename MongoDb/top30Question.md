@@ -356,17 +356,22 @@ Query operators allow us to perform conditions and comparisons.
 Common operators:
 
 ```text
-$eq
-$ne
-$gt
-$gte
-$lt
-$lte
-$in
-$nin
-$and
-$or
-$exists
+# MongoDB Query Operators
+
+| Operator  | Meaning                             | Example                                     |
+| --------- | ----------------------------------- | ------------------------------------------- |
+| `$eq`     | Equal to                            | `{ age: { $eq: 25 } }`                      |
+| `$ne`     | Not equal to                        | `{ age: { $ne: 25 } }`                      |
+| `$gt`     | Greater than                        | `{ age: { $gt: 20 } }`                      |
+| `$gte`    | Greater than or equal to            | `{ age: { $gte: 20 } }`                     |
+| `$lt`     | Less than                           | `{ age: { $lt: 30 } }`                      |
+| `$lte`    | Less than or equal to               | `{ age: { $lte: 30 } }`                     |
+| `$in`     | Matches any value in the list       | `{ priority: { $in: ["high", "medium"] } }` |
+| `$nin`    | Does not match values in the list   | `{ priority: { $nin: ["low"] } }`           |
+| `$and`    | All conditions must be true         | `{ $and: [...] }`                           |
+| `$or`     | At least one condition must be true | `{ $or: [...] }`                            |
+| `$exists` | Checks whether a field exists       | `{ dueDate: { $exists: true } }`            |
+
 ```
 
 Example:
